@@ -8,7 +8,9 @@ import { Recipe } from '../types';
 
 @Resolver(Recipe)
 export class RecipeResolver {
-  constructor(private recipeService: RecipeService) {}
+  constructor(private recipeService: RecipeService) {
+    this.recipeService = new RecipeService();
+  }
 
   @Query(returns => Recipe)
   async recipe(@Arg('id') id: string) {

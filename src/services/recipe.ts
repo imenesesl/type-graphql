@@ -3,6 +3,6 @@ import { Recipe } from '../types';
 
 export class RecipeService {
   async findById(id: string): Promise<Recipe> {
-    return { title: 'Recipe', id: id, creationDate: new Date(), ingredients: [], description: 'This is a recipe' };
+    return { title: 'Recipe', id: id, creationDate: new Date(), ingredients: [], description: 'This is a recipe HD' };
   }
 }
